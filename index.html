@@ -33,6 +33,7 @@
 			rel="stylesheet"
 			href="src/style.css"
 		/>
+		<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -41,6 +42,7 @@
 				<form
 					action="submit"
 					class="form"
+					id="form"
 				>
 					<input
 						type="text"
@@ -53,20 +55,12 @@
 					<input
 						type="submit"
 						class="submit-button"
+						id="submit-button"
 					/>
 				</form>
 			</header>
 
-			<main>
-				<div
-					id="poem"
-					class="poem"
-				>
-					Todos callados,<br />bajo la luna;<br />el bosque, el lago, <br />el
-					cerro, el monte,<br />
-					bajo la luna, <br />todos callados.
-				</div>
-			</main>
+			<main id="main"></main>
 
 			<footer>
 				This project was coded by
