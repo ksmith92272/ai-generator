@@ -69,15 +69,13 @@ input {
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 	font-size: 16px;
 	font-size: 500;
-	line-height: 2;
+	line-height: 1.75;
 	padding: 32px;
 }
 
 .signature {
 	color: indigo;
-	display: block;
 	font-weight: 700;
-	margin-top: 16px;
 }
 
 footer {
