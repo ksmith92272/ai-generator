@@ -6,6 +6,28 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
 		<title>AI Generator</title>
 		<link
 			rel="stylesheet"
@@ -13,39 +35,54 @@
 		/>
 	</head>
 	<body>
-		<header>
-			<h1>Spanish Poem Generator</h1>
-			<form action="submit">
-				<input
-					type="text"
-					placeholder="Enter a topic for the poem"
-					autofocus
-					autocomplete="off"
-					required
-				/>
-				<input type="submit" />
-			</form>
-			<div id="poem">
-				Todos callados,<br />bajo la luna;<br />el bosque, el lago, <br />el
-				cerro, el monte,<br />
-				bajo la luna, <br />todos callados.
-			</div>
-		</header>
-		<main></main>
-		<footer>
-			This project was coded by
-			<a
-				href="https://github.com/ksmith92272"
-				target="_blank"
-				>Kimberly Smith</a
-			>
-			and is
-			<a
-				href="https://github.com/ksmith92272/ai-generator"
-				target="_blank"
-				>open-sourced on GitHub.</a
-			>
-		</footer>
+		<div class="container">
+			<header>
+				<h1>AI Spanish Poem Generator</h1>
+				<form
+					action="submit"
+					class="form"
+				>
+					<input
+						type="text"
+						placeholder="Enter a topic for the poem"
+						autofocus
+						autocomplete="off"
+						required
+						class="text-field"
+					/>
+					<input
+						type="submit"
+						class="submit-button"
+					/>
+				</form>
+			</header>
+
+			<main>
+				<div
+					id="poem"
+					class="poem"
+				>
+					Todos callados,<br />bajo la luna;<br />el bosque, el lago, <br />el
+					cerro, el monte,<br />
+					bajo la luna, <br />todos callados.
+				</div>
+			</main>
+
+			<footer>
+				This project was coded by
+				<a
+					href="https://github.com/ksmith92272"
+					target="_blank"
+					>Kimberly Smith</a
+				>
+				and is
+				<a
+					href="https://github.com/ksmith92272/ai-generator"
+					target="_blank"
+					>open-sourced on GitHub.</a
+				>
+			</footer>
+		</div>
 		<script src="src/index.js"></script>
 	</body>
 </html>
