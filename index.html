@@ -40,46 +40,48 @@
 		<div class="container">
 			<header>
 				<h1>AI Spanish Poem Generator</h1>
-				<form
-					action="submit"
-					class="form"
-					id="form"
+				<div
+					id="form-container"
+					class="form-container"
 				>
-					<input
-						type="text"
-						placeholder="Enter a topic for the poem"
-						autofocus
-						autocomplete="off"
-						required
-						class="text-field"
-						id="text-field"
-					/>
-					<input
-						type="submit"
-						class="submit-button"
-						id="submit-button"
-					/>
-				</form>
+					<form
+						action="submit"
+						class="form"
+						id="form"
+					>
+						<input
+							type="text"
+							placeholder="Enter a topic for the poem"
+							autofocus
+							autocomplete="off"
+							required
+							class="text-field"
+							id="text-field"
+						/>
+						<input
+							type="submit"
+							class="submit-button"
+							id="submit-button"
+						/>
+					</form>
+					<p class="instructions">
+						i.e. Flowers, mountains, apples and oranges
+					</p>
+				</div>
 			</header>
 			<main id="main">
 				<div
 					id="poem"
-					class="poem"
+					class="poem hidden"
 				>
-					Todos callados,
-					<br />
-					bajo la luna;
-					<br />
-					el bosque, el lago, <br />
-					el cerro, el monte,
-					<br />
-					bajo la luna, <br />
-					todos callados.
 					<span
-						id="signature"
-						class="signature"
-						>SheCodes AI</span
-					>
+						id="first"
+						class="first"
+					></span>
+					<span
+						id="second"
+						class="second"
+					></span>
 				</div>
 			</main>
 			<footer>

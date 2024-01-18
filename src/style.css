@@ -19,14 +19,17 @@ h1 {
 	text-align: center;
 }
 
-form {
+.form-container {
 	background-color: white;
 	border-radius: 8px;
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-	display: flex;
-	justify-content: space-between;
 	margin-bottom: 32px;
 	padding: 32px;
+}
+
+form {
+	display: flex;
+	justify-content: space-between;
 }
 
 input {
@@ -63,6 +66,13 @@ input {
 	cursor: pointer;
 }
 
+.instructions {
+	color: gray;
+	font-size: 12px;
+	line-height: 1.5;
+	margin: 8px 0 0 16px;
+}
+
 .poem {
 	background: white;
 	border-left: 3px solid indigo;
@@ -71,6 +81,10 @@ input {
 	font-size: 500;
 	line-height: 1.75;
 	padding: 32px;
+}
+
+.hidden {
+	display: none;
 }
 
 .signature {
@@ -88,4 +102,9 @@ footer {
 a {
 	color: indigo;
 	font-weight: 600;
+}
+
+.repeat {
+	color: red;
+	font-weight: 900;
 }

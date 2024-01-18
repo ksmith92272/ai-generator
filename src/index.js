@@ -2,13 +2,8 @@ function generatePoem(event) {
 	event.preventDefault();
 
 	let poemElement = document.getElementById("poem");
-	new Typewriter(poemElement, {
-		strings: `...`,
-		autoStart: true,
-		cursor: ``,
-		delay: 1,
-		loop: true,
-	});
+	poemElement.classList.remove("hidden");
+	poemElement.innerHTML = `<span  id="first" class="first"></span><span id="second"	class="second"></span>`;
 
 	let inputElement = document.getElementById("text-field");
 	let apiKey = `6atoab0f92eca3d102a54e7250f4dd0f`;
@@ -16,6 +11,23 @@ function generatePoem(event) {
 	let apiPrompt = `Please write me a short poem about ${inputElement.value}`;
 
 	let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${apiPrompt}&context=${apiContext}&key=${apiKey}`;
+
+	let typewriter = new Typewriter("#first", {
+		strings: `Generating a poem for you about ${inputElement.value}`,
+		autoStart: true,
+		cursor: ``,
+		delay: 5,
+	});
+
+	if (typewriter.options.strings.includes("G") === true) {
+		new Typewriter("#second", {
+			strings: `...`,
+			autoStart: true,
+			cursor: ``,
+			delay: 5,
+			loop: true,
+		});
+	}
 
 	axios.get(apiURL).then(displayPoem);
 }
